@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Imagens e áudios dinamicos em html > feito por gian">
+
+    <link rel="icon" href="images/icon.ico" type="ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Imagens e áudio Dinâmicos</title>
+</head>
+<body>
+    <header>
+        <h1>Imagens e Áudio Dinâmicos em HTML</h1>
+        <h2>Apenas Imagens Dinâmicas:</h2>
+    </header>
+    <main>
+        <section>
+            <h1>PRIMEIRA IMAGEM, VAI SER PEQUENO(600 PX), MEDIO(1050 PX), GRANDE(2000 PX).</h1>
+        </section>
+        
+        <article class="fotos">
+             <picture>
+                <source media="(max-width: 600px)" srcset="images/foto-p.png" type="image/png" alt="imagem flexivel p">
+                <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png" alt="imagem flexivel m">
+                <img src="images/foto-g.png" alt="imagem flexivel g">
+            </picture>
+        </article>
+
+        <article class="audio">
+            <p>Audio Podcast</p>
+            <audio preload="metadata" controls autoplay loop>
+                <source src="audio/guanacast-33.mp3" type="audio/mpeg">
+                <source src="audio/happy-mistake.mp3" type="audio/mpeg">
+                <p>Seu navegador nao suporta audio  <a href="audio/guanacast-33.mp3" download="audio/guanacast-33.mp3" type="audio/mpeg"></a></p>
+            </audio>
+                
+        </article>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Desenvolvido por Gian</p>
+    </footer>
+</body>
+</html>
